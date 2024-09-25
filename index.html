@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Ticarət Mağazası</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+</head>
+<body>
+    <header>
+        <h1>E-Ticarət Mağazası</h1>
+        <div id="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <div id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Səbətim</h2>
+            <button id="close-cart" class="close-button">&times;</button>
+        </div>
+        <div id="cart-items"></div>
+        <div id="cart-total">
+            <p>Toplam Məhsul: <span id="total-items">0</span></p>
+            <p>Toplam Qiymət: <span id="total-price">0.00</span> AZN</p>
+        </div>
+        <button id="checkout-button" class="checkout-button">Sifarişi Tamamla</button>
+    </div>
+
+    <main>
+        <section id="products">
+        </section>
+    </main>
+
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
